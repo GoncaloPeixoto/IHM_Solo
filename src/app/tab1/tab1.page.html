@@ -1,0 +1,69 @@
+<app-default-header></app-default-header>
+
+<ion-content>
+  <div class="flex flex-column">
+    <div>
+      <swiper-container
+        (sliderchange)="swiperSlideChanged($event)"
+        [loop]="true"
+        [pagination]="true"
+        style="height: 300px"
+      >
+        <swiper-slide
+          ><img
+            src="../../assets/imgs/VF_1.jpeg"
+            style="object-fit: cover; height: 300px"
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="../../assets/imgs/VF_2.jpg" style="object-fit: fill"
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="../../assets/imgs/VF_3.jpg" style="object-fit: fill"
+        /></swiper-slide>
+        <swiper-slide
+          ><img
+            src="../../assets/imgs/VF_4.jpg"
+            style="object-fit: cover; height: 300px"
+        /></swiper-slide>
+        <swiper-slide
+          ><img src="../../assets/imgs/VF_5.jpg" style="object-fit: fill"
+        /></swiper-slide>
+      </swiper-container>
+    </div>
+    <div class="flex flex-column gap-16 ion-padding">
+      <div class="flex flex-column gap-8">
+        <ion-text class="fs-18 fb-700"> Historia </ion-text>
+        <ion-text class="fs-14 fb-500"> Terra de Alma e Cor </ion-text>
+      </div>
+
+      <ion-text class="fs-14">
+        Vila Flor é uma vila portuguesa situada no distrito de Bragança, na
+        região Norte do país. A sua história está profundamente ligada à figura
+        do rei D. Dinis, que, durante uma passagem pela então "Póvoa d'Além
+        Sabor", a caminho de Miranda do Douro para encontrar a sua noiva, Isabel
+        de Aragão, se encantou com a beleza e a abundância de flores do local.
+        Em maio de 1286, D. Dinis rebatizou a povoação como "Vila Flor" e
+        concedeu-lhe foral, elevando-a à categoria de vila.
+      </ion-text>
+      <ion-text class="fs-14">
+        Para proteger a vila, D. Dinis mandou construir, por volta de 1295, uma
+        cerca com cinco portas, das quais subsiste o Arco de D. Dinis, um
+        monumento de interesse público.
+      </ion-text>
+      <ion-text class="fs-14">
+        Atualmente, Vila Flor é conhecida como a "Capital Portuguesa do Azeite",
+        devido à qualidade dos seus produtos agrícolas, especialmente o azeite
+        proveniente do Vale da Vilariça. A vila também se destaca pela sua
+        arquitetura tradicional, com edifícios como a Igreja Matriz e o
+        pelourinho a enriquecerem o seu património cultural. Além disso, a
+        beleza natural da região, com paisagens verdejantes e montes salpicados
+        de amendoeiras em flor, continua a encantar visitantes e a manter viva a
+        lenda que originou o nome da vila.
+      </ion-text>
+      <ion-text class="fs-14 fb-700"> Heráldica </ion-text>
+      <div>
+        <img src="../../assets/imgs/VF_H.png" />
+      </div>
+    </div>
+  </div>
+</ion-content>

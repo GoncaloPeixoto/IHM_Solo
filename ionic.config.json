@@ -1,0 +1,7 @@
+{
+  "name": "VfApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
