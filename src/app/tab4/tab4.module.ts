@@ -2,10 +2,10 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab3Page } from './tab3.page';
+import { Tab4Page } from './tab4.page';
 
 
-import { Tab3PageRoutingModule } from './tab3-routing.module';
+import { Tab4PageRoutingModule } from './tab4-routing.module';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @NgModule({
@@ -14,8 +14,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     CommonModule,
     FormsModule,
     ComponentsModule,
-    Tab3PageRoutingModule
+    Tab4PageRoutingModule
   ],
-  declarations: [Tab3Page]
+  declarations: [Tab4Page]
 })
-export class Tab3PageModule {}
+export class Tab4PageModule {}
