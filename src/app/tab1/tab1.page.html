@@ -2,36 +2,41 @@
 
 <ion-content>
   <div class="flex flex-column">
-    <div>
+    <div class="swiper-container">
       <swiper-container
         (sliderchange)="swiperSlideChanged($event)"
         [loop]="true"
         [pagination]="true"
-        style="height: 300px"
       >
-        <swiper-slide
-          ><img
-            src="../../assets/imgs/VF_1.jpeg"
-            style="object-fit: cover; height: 300px"
-        /></swiper-slide>
-        <swiper-slide
-          ><img src="../../assets/imgs/VF_2.jpg" style="object-fit: fill"
-        /></swiper-slide>
-        <swiper-slide
-          ><img src="../../assets/imgs/VF_3.jpg" style="object-fit: fill"
-        /></swiper-slide>
-        <swiper-slide
-          ><img
-            src="../../assets/imgs/VF_4.jpg"
-            style="object-fit: cover; height: 300px"
-        /></swiper-slide>
-        <swiper-slide
-          ><img src="../../assets/imgs/VF_5.jpg" style="object-fit: fill"
-        /></swiper-slide>
+        <swiper-slide>
+          <div class="slide-img">
+            <img src="../../assets/imgs/VF_1.jpeg" />
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="slide-img">
+            <img src="../../assets/imgs/VF_2.jpg" />
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="slide-img">
+            <img src="../../assets/imgs/VF_3.jpg" />
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="slide-img">
+            <img src="../../assets/imgs/VF_4.jpg" />
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="slide-img">
+            <img src="../../assets/imgs/VF_5.jpg" />
+          </div>
+        </swiper-slide>
       </swiper-container>
     </div>
     <div class="flex flex-column gap-16 ion-padding">
-      <div class="flex flex-column gap-8">
+      <div class="flex flex-column gap-8 align-items-center">
         <ion-text class="fs-18 fb-700"> Historia </ion-text>
         <ion-text class="fs-14 fb-500"> Terra de Alma e Cor </ion-text>
       </div>
@@ -61,8 +66,33 @@
         lenda que originou o nome da vila.
       </ion-text>
       <ion-text class="fs-14 fb-700"> Heráldica </ion-text>
-      <div>
-        <img src="../../assets/imgs/VF_H.png" />
+      <div class="flex flex-column">
+        <ion-card class="cardStyle">
+          <div class="flex justify-content-center">
+            <img
+              src="../../assets/imgs/VF_H.png"
+              style="max-height: 300px; object-fit: contain"
+              class="justify-content-center"
+            />
+          </div>
+
+          <div>
+            <ion-card-header>
+              <ion-card-title>Brasao de Vila Flor</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              A escolha da flor-de-lis pode estar relacionada com o próprio nome
+              da vila, "Vila Flor", reforçando a identidade local através deste
+              símbolo heráldico. Além disso, o historiador Rodrigo Mendes da
+              Silva, em 1645, descreveu as armas de Vila Flor como "una dorada
+              flor e liz", destacando a importância deste emblema na
+              representação da vila. Assim, o brasão de Vila Flor não só reflete
+              a sua história e ligação à monarquia portuguesa, mas também
+              simboliza as qualidades e valores associados à comunidade local.
+            </ion-card-content>
+          </div>
+        </ion-card>
       </div>
     </div>
   </div>

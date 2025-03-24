@@ -1,17 +1,66 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-default-header></app-default-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="flex flex-column gap-8">
+    <div>
+      <ion-text>Executivo municipal</ion-text>
+    </div>
+    <!-- Presi -->
+    <div class="flex flex-row gap-8">
+      <div style="max-width: 40%">
+        <img
+          src="../../assets/imgs/Presi.jpg"
+          alt="Presidente Lima"
+          class="cardImgStyle"
+        />
+      </div>
 
+      <div class="cardTextStyle flex flex-column">
+        <ion-text>Presidente</ion-text>
+        <ion-text>Pedro Lima</ion-text>
+        <ion-text>
+          Pedro Miguel Saraiva Lima Cordeiro de Melo assumiu a presidência da
+          Câmara Municipal de Vila Flor em 2021. É formado em Engenharia
+          Aeronáutica pelo North East Wales Institute e possui um MBA pela
+          University of Salford, Manchester.
+        </ion-text>
+      </div>
+    </div>
+    <!-- vice -->
+    <div class="flex flex-row gap-8">
+      <div style="max-width: 40%">
+        <img
+          src="../../assets/imgs/VF_VP.png"
+          alt="Presidente Lima"
+          class="cardImgStyle"
+        />
+      </div>
 
+      <div class="cardTextStyle flex flex-column">
+        <ion-text>Vice Presidente</ion-text>
+        <ion-text>Ana Ramos</ion-text>
+        <ion-text>
+          Ana Sofia dos Santos Carvalho Gonçalves Ramos é a vice-presidente
+          desde 2021. Ela possui uma licenciatura em Engenharia do Ambiente pela
+          Universidade de Trás-os-Montes e Alto Douro (UTAD) e uma pós-graduação
+          em Gestão e Valorização de Recursos Hídricos.
+        </ion-text>
+      </div>
+    </div>
+    <div>
+      <ion-text>Freguesias</ion-text>
+      <ion-card class="cardStyle">
+        <img alt="Freguesias" src="../../assets/imgs/VF_F.png" />
+        <ion-card-header>
+          <ion-card-title>Card Title</ion-card-title>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content> </ion-card-content>
+      </ion-card>
+    </div>
+    <div>
+      <ion-text>Personalidades Ilustres</ion-text>
+    </div>
+  </div>
 </ion-content>
