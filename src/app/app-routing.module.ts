@@ -11,10 +11,11 @@ const routes: Routes = [
     path: 'app',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  // {
-  //   path: 'splash',
-  //   loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
-  // },
+  {
+    path: 'splash',
+    loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+  },
+
 
 
 
