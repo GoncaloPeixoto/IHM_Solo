@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -16,6 +17,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     FormsModule,
     ComponentsModule,
 =======
+=======
+>>>>>>> Stashed changes
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -31,6 +34,9 @@ import { SplashPage } from './splash.page';
     CommonModule,
     FormsModule,
     IonicModule,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     SplashPageRoutingModule
   ],
