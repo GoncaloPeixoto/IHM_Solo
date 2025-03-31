@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { RouterModule, Routes } from '@angular/router';
+=======
+import { Routes, RouterModule } from '@angular/router';
+
+>>>>>>> Stashed changes
 =======
 import { Routes, RouterModule } from '@angular/router';
 
@@ -17,7 +22,11 @@ const routes: Routes = [
     path: '',
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     component: SplashPage,
+=======
+    component: SplashPage
+>>>>>>> Stashed changes
 =======
     component: SplashPage
 >>>>>>> Stashed changes
@@ -31,7 +40,11 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   exports: [RouterModule]
+=======
+  exports: [RouterModule],
+>>>>>>> Stashed changes
 =======
   exports: [RouterModule],
 >>>>>>> Stashed changes
