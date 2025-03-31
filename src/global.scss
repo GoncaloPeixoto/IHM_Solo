@@ -352,13 +352,6 @@
     background-color: var(--ion-color-white);
 }
 
-.cardTextStyle {
-    border-radius: 10px;
-    box-shadow: 0px 4px 30px rgba(221, 224, 255, .54);
-    border: 1px solid var(--ion-color-lightgreyborder);
-    padding: 8px;
-    background-color: var(--ion-color-white);
-}
 
 .tabButton {
     padding-inline: 10px;
@@ -501,6 +494,9 @@
 .fs-14 {
     font-size: 14px;
 }
+.fs-16 {
+    font-size: 16px;
+}
 .fb-400 {
     font-weight: 400;
 }
@@ -515,4 +511,10 @@
 
 .fb-700 {
     font-weight: 700;
+}
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
 }
