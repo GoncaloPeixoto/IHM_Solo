@@ -1,6 +1,5 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import { Component } from '@angular/core';
 
 @Component({
@@ -13,8 +12,6 @@ export class SplashPage {
 
   constructor() {}
 =======
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 import { Component, OnInit } from '@angular/core';
@@ -32,9 +29,6 @@ export class SplashPage implements OnInit {
   ngOnInit() {
   }
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
