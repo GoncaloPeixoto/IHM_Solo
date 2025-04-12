@@ -3,48 +3,21 @@
 <ion-content class="ion-padding">
   <div class="flex flex-column gap-8 align-items-center">
     <div>
-      <ion-text class="fs-18 fb-700">
-        Pontos de Interesse Turístico
-      </ion-text>
+      <ion-text class="fs-18 fb-700"> Pontos de Interesse Turístico </ion-text>
     </div>
-      <div>
-        <ion-card class="cardStyle">
-          <img alt="Silhouette of mountains" src="/assets/imgs/VF_5.jpg" />
-          <ion-card-header>
-            <ion-card-title>Igraja Matriz</ion-card-title>
-            <ion-card-subtitle>Vila Flor</ion-card-subtitle>
-          </ion-card-header>
-        
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more, nothing less.
-          </ion-card-content>
-        </ion-card>
-      </div>
-      <div>
-        <ion-card class="cardStyle">
-          <img alt="Silhouette of mountains" src="/assets/imgs/VF_2.jpg" />
-          <ion-card-header>
-            <ion-card-title>Arco de D. Dinis</ion-card-title>
-            <ion-card-subtitle>Vila Flor</ion-card-subtitle>
-          </ion-card-header>
-        
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more, nothing less.
-          </ion-card-content>
-        </ion-card>
-      </div>
-      <div>
-        <ion-card class="cardStyle">
-          <img alt="Silhouette of mountains" src="/assets/imgs/VF_FF.jpg" />
-          <ion-card-header>
-            <ion-card-title>Forca</ion-card-title>
-            <ion-card-subtitle>Freixiel</ion-card-subtitle>
-          </ion-card-header>
-        
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more, nothing less.
-          </ion-card-content>
-        </ion-card>
-      </div>
+    <ion-card *ngFor="let poi of poisData">
+      <img
+        src="{{poi.foto}}"
+        style="max-height: 150px; width: 100%; object-fit: cover"
+      />
+      <ion-card-header>
+        <ion-card-title>{{poi.nome}}</ion-card-title>
+        <ion-card-subtitle>{{poi.localizacao}}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-text>{{poi.descricao}}</ion-text>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>

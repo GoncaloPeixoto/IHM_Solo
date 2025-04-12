@@ -4,7 +4,6 @@
   <div clas="flex flex-column gap-16 justify-content-center align-items-center">
     <ion-card *ngFor="let restaurante of restaurantesData">
       <img
-        alt="Silhouette of mountains"
         src="{{restaurante.foto}}"
         style="max-height: 150px; width: 100%; object-fit: cover"
       />
@@ -14,8 +13,8 @@
       </ion-card-header>
 
       <ion-card-content>
-        <ion-text >{{restaurante.descricao}}</ion-text>
+        <ion-text>{{restaurante.descricao}}</ion-text>
       </ion-card-content>
     </ion-card>
-    </div>
+  </div>
 </ion-content>

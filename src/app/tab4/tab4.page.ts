@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { POIS } from '../json/pois';
 
 @Component({
   selector: 'app-tab4',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class Tab4Page {
-
+poisData:any[] = POIS;
   constructor() {}
 
 }

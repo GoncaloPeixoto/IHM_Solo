@@ -75,6 +75,26 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <div class="flex gap-16">
+        <div
+          class="flex flex-column justify-content-center align-items-center gap-6 statsStyle"
+        >
+          <ion-text class="fs-16 fb-500">Habitantes</ion-text>
+          <ion-text class="fs-12">~7000</ion-text>
+        </div>
+        <div
+          class="flex flex-column justify-content-center align-items-center gap-6 statsStyle"
+        >
+          <ion-text class="fs-16 fb-500">Area</ion-text>
+          <ion-text class="fs-12">266,00 km2</ion-text>
+        </div>
+        <div
+          class="flex flex-column justify-content-center align-items-center gap-6 statsStyle"
+        >
+          <ion-text class="fs-16 fb-500">Freguesias</ion-text>
+          <ion-text class="fs-12">14</ion-text>
+        </div>
+      </div>
     </div>
     <div class="flex flex-column gap-10 w-100">
       <ion-text class="fs-16 ion-text-center w-100 fb-500">
@@ -128,6 +148,33 @@
               como Angular e Flutter, aliando programação e multimédia para
               criar soluções inovadoras.
             </ion-text>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-column gap-10 w-100">
+      <ion-text class="fs-16 ion-text-center w-100 fb-500">
+        Produtos Regionais</ion-text
+      >
+      <div
+        class="flex flex-column gap-8 justify-content-center align-items-center"
+      >
+        <div
+          *ngFor="let produto of produtosData"
+          class="flex align-items-center justify-content-center gap-16 cardStyle"
+          style="min-height: 200px"
+        >
+          <div class="w-50" style="height: 200px; min-height: 200px">
+            <img
+              src="{{produto.foto}}"
+              alt="Presidente Lima"
+              style="object-fit: cover; width: 100%; height: 100%"
+            />
+          </div>
+          <div class="w-100 flex flex-column gap-8">
+            <ion-text class="fs-16 fb-500">{{produto.nome}}</ion-text>
+            <ion-text>{{produto.origem}}</ion-text>
+            <ion-text class="fs-12"> {{produto.descricao}} </ion-text>
           </div>
         </div>
       </div>

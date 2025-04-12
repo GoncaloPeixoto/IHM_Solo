@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PRODUTOS } from '../json/produtos';
+
 
 @Component({
   selector: 'app-tab2',
@@ -8,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  
+  produtosData:any[] = PRODUTOS;
   constructor() {}
 
 }
